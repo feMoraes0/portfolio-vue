@@ -3,8 +3,8 @@
     <div class="image">
       <img src="@/assets/hand_rock.png" alt="">
     </div>
-    <h1>Fernando M.</h1>
-    <h5>Full Stack Developer</h5>
+    <h1>Hi! I'm Fernando</h1>
+    <h5>A Full Stack Developer</h5>
   </div>
 </template>
 
@@ -36,23 +36,25 @@ export default {
     margin-bottom: 20px;
 
     img {
-      width: auto;
       height: 90%;
       margin-bottom: -3px;
+      width: auto;
     }
   }
 
   h1 {
     color: #1d2024;
     font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: -2px;
     line-height: 5.2rem;
-    letter-spacing: -1px;
     margin-bottom: 12px;
   }
 
   h5 {
-    font-size: 1.8rem;
-    letter-spacing: -1px;
+    color: #455464;
+    font-size: 1.6rem;
+    font-weight: 400;
   }
 }
 </style>
