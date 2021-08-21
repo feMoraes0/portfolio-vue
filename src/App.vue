@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Header />
     <transition name="slide-fade" mode="out-in" appear>
       <router-view />
     </transition>
@@ -7,13 +8,17 @@
 </template>
 
 <script>
+import Header from '@/components/Header.vue';
+
 export default {
   name: 'App',
+  components: {
+    Header,
+  },
 };
 </script>
 
 <style lang="scss">
-@import './assets/scss/animations';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
@@ -21,10 +26,14 @@ export default {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 #app {
-  background-color: #f8fafd;
+  background-color: $color-background;
   min-height: 100vh;
   width: 100vw;
 }

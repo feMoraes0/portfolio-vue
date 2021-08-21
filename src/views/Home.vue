@@ -1,11 +1,11 @@
 <template>
-  <div class="home">
-    <div class="image">
-      <img src="@/assets/hand_rock.png" alt="">
+    <div class="home">
+      <div class="image">
+        <img src="@/assets/hand_rock.png" alt="">
+      </div>
+      <h1>Hi! I'm Fernando</h1>
+      <h5>A Full Stack Developer</h5>
     </div>
-    <h1>Hi! I'm Fernando</h1>
-    <h5>A Full Stack Developer</h5>
-  </div>
 </template>
 
 <script>
@@ -29,7 +29,7 @@ export default {
     align-items: flex-end;
     height: 150px;
     width: 150px;
-    border: 8px solid #1d2024;
+    border: 8px solid $color-primary;
     border-radius: 100%;
     display: flex;
     justify-content: center;
@@ -43,7 +43,7 @@ export default {
   }
 
   h1 {
-    color: #1d2024;
+    color: $color-primary;
     font-size: 5rem;
     font-weight: 700;
     letter-spacing: -2px;
@@ -52,7 +52,7 @@ export default {
   }
 
   h5 {
-    color: #455464;
+    color: $color-secondary;
     font-size: 1.6rem;
     font-weight: 400;
   }
