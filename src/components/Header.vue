@@ -15,6 +15,7 @@ export default {
 
 <style lang="scss" scoped>
 header {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
