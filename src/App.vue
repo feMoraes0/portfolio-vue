@@ -11,3 +11,25 @@ export default {
   name: 'App',
 };
 </script>
+
+<style lang="scss">
+* {
+  box-sizing: border-box;
+  color: $color-text;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+
+  a {
+    color: $color-link;
+  }
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: $color-background;
+}
+
+</style>
