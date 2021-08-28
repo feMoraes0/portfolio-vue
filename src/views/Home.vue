@@ -1,7 +1,11 @@
 <template>
   <main>
     <section>
-      <img src="@/assets/images/bighead-default.svg" alt="person ">
+      <img
+        @click="avatarImageClick"
+        src="@/assets/images/bighead-default.svg"
+        alt="avatar"
+      >
       <div class="content">
         <h2>Fernando Moraes</h2>
         <h3>Full Stack Developer</h3>
@@ -11,7 +15,10 @@
           ReactJS, React Native, NodeJS and others. Always trying to evolve and deliver
           the best experience for developers and users.
         </span>
-        <Button>Contact</Button>
+        <div>
+          <Button :on-click="contactClick">Contact</Button>
+          <Button :on-click="projectClick">Project</Button>
+        </div>
       </div>
     </section>
   </main>
@@ -24,6 +31,17 @@ export default {
   name: 'Home',
   components: {
     Button,
+  },
+  methods: {
+    avatarImageClick() {
+      console.log('avatar image click');
+    },
+    contactClick() {
+      console.log('contact click');
+    },
+    projectClick() {
+      console.log('project click');
+    },
   },
 };
 </script>
@@ -75,6 +93,22 @@ main {
         margin-bottom: 30px;
         word-break: keep-all;
         text-align: center;
+      }
+
+      div {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+
+        button {
+          margin-left: 50px;
+
+          &:first-child {
+            margin-left: 0;
+          }
+        }
       }
     }
   }
