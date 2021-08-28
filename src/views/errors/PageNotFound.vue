@@ -29,5 +29,12 @@ main {
     width: 15%;
     margin-bottom: 50px;
   }
+
+  h3 {
+    line-height: 150%;
+    text-align: center;
+    width: 20%;
+    font-weight: 300;
+  }
 }
 </style>
