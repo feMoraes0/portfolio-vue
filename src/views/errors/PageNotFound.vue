@@ -22,8 +22,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
 
   img {
     width: 15%;
