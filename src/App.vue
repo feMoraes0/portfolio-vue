@@ -16,7 +16,7 @@ export default {
 * {
   box-sizing: border-box;
   color: $color-text;
-  font-family: 'Inter', sans-serif;
+  font-family: $font-default;
   margin: 0;
   padding: 0;
   text-decoration: none;
