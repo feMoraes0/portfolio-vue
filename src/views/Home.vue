@@ -5,20 +5,26 @@
       <div class="content">
         <h2>Fernando Moraes</h2>
         <h3>Full Stack Developer</h3>
-        <div>
+        <span>
           Coding with JavaScript
           and TypeScript languages and their frameworks and libraries like VueJS,
           ReactJS, React Native, NodeJS and others. Always trying to evolve and deliver
           the best experience for developers and users.
-        </div>
+        </span>
+        <Button>Contact</Button>
       </div>
     </section>
   </main>
 </template>
 
 <script>
+import Button from '@/components/Button.vue';
+
 export default {
   name: 'Home',
+  components: {
+    Button,
+  },
 };
 </script>
 
@@ -31,17 +37,23 @@ main {
 
   section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
 
     img {
-      width: 20%;
+      width: 15%;
+      margin-bottom: 30px;
     }
 
     .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
       width: 35%;
+
       h2 {
         font-size: 2.43rem;
         font-weight: 900;
@@ -54,13 +66,15 @@ main {
         margin-bottom: 30px;
       }
 
-      div {
-        width: 93%;
+      span {
+        width: 100%;
         font-size: 1.15rem;
         font-weight: 400;
         align-self: center;
         line-height: 1.5rem;
+        margin-bottom: 30px;
         word-break: keep-all;
+        text-align: center;
       }
     }
   }
