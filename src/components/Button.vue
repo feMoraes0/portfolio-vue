@@ -25,6 +25,6 @@ button {
   font-weight: 700;
   line-height: 1.5rem;
   letter-spacing: 0.1em;
-  padding: 10px 30px;
+  padding: 10px 35px;
 }
 </style>
