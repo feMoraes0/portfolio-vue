@@ -15,7 +15,7 @@ export default {
 <style lang="scss">
 * {
   box-sizing: border-box;
-  color: $color-text;
+  color: $color-white;
   font-family: $font-default;
   margin: 0;
   padding: 0;
@@ -28,7 +28,7 @@ export default {
 
 body {
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   background-color: $color-background;
 }
 
