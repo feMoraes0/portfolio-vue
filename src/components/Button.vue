@@ -21,6 +21,7 @@ button {
   background-color: $color-button;
   border: none;
   border-radius: 10px;
+  cursor: pointer;
   font-size: 1.1rem;
   font-weight: 700;
   line-height: 1.5rem;
