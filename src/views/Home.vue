@@ -21,23 +21,31 @@
         </div>
       </div>
     </section>
+    <Contact :isVisible="contactIsVisible" @close="contactClick" />
   </main>
 </template>
 
 <script>
 import Button from '@/components/Button.vue';
+import Contact from '../components/Contact.vue';
 
 export default {
   name: 'Home',
   components: {
     Button,
+    Contact,
+  },
+  data() {
+    return {
+      contactIsVisible: false,
+    };
   },
   methods: {
     avatarImageClick() {
       console.log('avatar image click');
     },
     contactClick() {
-      console.log('contact click');
+      this.contactIsVisible = !this.contactIsVisible;
     },
     projectClick() {
       console.log('project click');
