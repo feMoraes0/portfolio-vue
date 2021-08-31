@@ -15,42 +15,14 @@
           ReactJS, React Native, NodeJS and others. Always trying to evolve and deliver
           the best experience for developers and users.
         </span>
-        <div>
-          <Button :on-click="contactClick">Contact</Button>
-          <Button :on-click="projectClick">Project</Button>
-        </div>
       </div>
     </section>
-    <Contact :isVisible="contactIsVisible" @close="contactClick" />
   </main>
 </template>
 
 <script>
-import Button from '@/components/Button.vue';
-import Contact from '../components/Contact.vue';
-
 export default {
   name: 'Home',
-  components: {
-    Button,
-    Contact,
-  },
-  data() {
-    return {
-      contactIsVisible: false,
-    };
-  },
-  methods: {
-    avatarImageClick() {
-      console.log('avatar image click');
-    },
-    contactClick() {
-      this.contactIsVisible = !this.contactIsVisible;
-    },
-    projectClick() {
-      console.log('project click');
-    },
-  },
 };
 </script>
 
@@ -101,22 +73,6 @@ main {
         margin-bottom: 30px;
         word-break: keep-all;
         text-align: center;
-      }
-
-      div {
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-
-        button {
-          margin-left: 50px;
-
-          &:first-child {
-            margin-left: 0;
-          }
-        }
       }
     }
   }
