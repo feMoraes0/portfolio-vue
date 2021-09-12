@@ -2,6 +2,35 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/feMoraes0/portfolio-vue/compare/v0.1.2...v1.0.0) (2021-09-12)
+
+
+### Features
+
+* **app:** add colors, font and style to new version ([c5afc13](https://github.com/feMoraes0/portfolio-vue/commit/c5afc1353edc9995c7be189e5fd9e58fd0eb3a7d))
+* **button:** add local button component ([058e93c](https://github.com/feMoraes0/portfolio-vue/commit/058e93c3bce9e6ced9bafefef767c7e40c2db7cf))
+* **contact:** add new section ([b5db82e](https://github.com/feMoraes0/portfolio-vue/commit/b5db82e4882b4e03f7051b9f3b3cffbb584219da))
+* **home:** add home page base ([51db208](https://github.com/feMoraes0/portfolio-vue/commit/51db20813851d8db706fb03ce5fc4221d4f29a46))
+* **page not found:** add image, text and style to 404 error page ([2a513a4](https://github.com/feMoraes0/portfolio-vue/commit/2a513a4ce22b47c8b2a536a5b49f938cbc41f2bd))
+* **pagenotfound:** add new component to represent page not found (404) error ([3e8544e](https://github.com/feMoraes0/portfolio-vue/commit/3e8544eafb266f5e397b8d7c44b5954c2db0cf9a))
+
+
+### Refactors
+
+* **button:** define cursor pointer to default button component ([2272679](https://github.com/feMoraes0/portfolio-vue/commit/2272679ce3b1a662720affd67b949e84cf73cfeb))
+* **button:** update button padding ([1e433cb](https://github.com/feMoraes0/portfolio-vue/commit/1e433cb2d8368e6eb2174c2f07bdc94d1e3c9401))
+* **contact:** delete contact component due redesign ([ebc8373](https://github.com/feMoraes0/portfolio-vue/commit/ebc83731898f16f294367774970347752fb1b8fc))
+* **font:** define default font as scss variable ([57e7cbc](https://github.com/feMoraes0/portfolio-vue/commit/57e7cbcbbe5834d841fd2a326d810271807fb660))
+* **home:** add button base functions and update button layout position ([e5ab283](https://github.com/feMoraes0/portfolio-vue/commit/e5ab28341155cd90547c5607bf90d6581c39311c))
+* **home:** removes contact and button components to apply new home design ([703c220](https://github.com/feMoraes0/portfolio-vue/commit/703c2200b63681624b54f4bb37ef8f6007c2d218))
+* **home:** update homes element direction ([2fd90ad](https://github.com/feMoraes0/portfolio-vue/commit/2fd90ad08f9c79730d561da6288a5704e602acec))
+* **page not found:** move main box width and height to global theme file ([da4bb21](https://github.com/feMoraes0/portfolio-vue/commit/da4bb211dafd4b2427c6453dda63bad04a0cbc83))
+* **page not found:** update page not found text style ([a4e107b](https://github.com/feMoraes0/portfolio-vue/commit/a4e107b23f53f5685649ac695afa0aae6250f7ee))
+* **structure:** cleans files that wont be used in the version 2.0 ([1cd7c58](https://github.com/feMoraes0/portfolio-vue/commit/1cd7c581e9c7c708284a0f4f8eeca5a0616a37f4))
+* **style:** remove style tag to move all scss future styles to assets structure ([e1a0bb3](https://github.com/feMoraes0/portfolio-vue/commit/e1a0bb37c3076b0f880ca24763b734de898cfa73))
+* **style:** update button padding and default font weight ([bd2fd5f](https://github.com/feMoraes0/portfolio-vue/commit/bd2fd5fc89dffa3404f0a8b042c6f547c067e198))
+* **variable:** updadte white colour variabe name ([1613d12](https://github.com/feMoraes0/portfolio-vue/commit/1613d1225a42a201cee0781d8057fae30414e8da))
+
 ### [0.1.2](https://github.com/feMoraes0/portfolio-vue/compare/v0.1.1...v0.1.2) (2021-08-26)
 
 
