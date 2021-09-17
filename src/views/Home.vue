@@ -1,21 +1,8 @@
 <template>
   <main>
     <section>
-      <img
-        @click="avatarImageClick"
-        src="@/assets/images/bighead-default.svg"
-        alt="avatar"
-      >
-      <div class="content">
-        <h2>Fernando Moraes</h2>
-        <h3>Full Stack Developer</h3>
-        <span>
-          Coding with JavaScript
-          and TypeScript languages and their frameworks and libraries like VueJS,
-          ReactJS, React Native, NodeJS and others. Always trying to evolve and deliver
-          the best experience for developers and users.
-        </span>
-      </div>
+      <h1></h1>
+      <h1><span>.</span></h1>
     </section>
   </main>
 </template>
@@ -28,52 +15,77 @@ export default {
 
 <style lang="scss" scoped>
 main {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  height: 100vh;
+  padding: 30px;
 
   section {
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
 
-    img {
-      width: 15%;
-      margin-bottom: 30px;
+    &:before {
+      content: '';
+      position: fixed;
+      top: 30px;
+      left: 30px;
+      z-index: -1;
+      background-color: $color-primary;
+      width: calc(50% - 30px);
+      height: calc(100% - 60px);
+      animation: move 1.5s ease;
+      transform-origin: left;
     }
 
-    .content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 30px;
-      width: 35%;
+    h1 {
+      color: $color-black;
+      font-family: $font-bold;
+      font-weight: bolder;
+      font-size: 13rem;
+      line-height: 11rem;
 
-      h2 {
-        font-size: 2.43rem;
-        font-weight: 900;
-        line-height: 2.875rem;
+      &:before {
+        transition: content 1s ease;
       }
 
-      h3 {
-        font-size: 1.15rem;
-        font-weight: 400;
-        margin-bottom: 30px;
+      &:first-child:after {
+        content: 'He';
+      }
+
+      &:first-child:hover:after {
+        margin-right: 3px;
+        content: 'Ha';
+      }
+
+      &:first-child {
+        margin-left: 15px;
+      }
+
+      &:last-child:before {
+        content: 'llo';
+      }
+
+      &:last-child:hover:before {
+        margin-left: 14px;
+        content: 'yy';
       }
 
       span {
-        width: 100%;
-        font-size: 1.15rem;
-        font-weight: 400;
-        align-self: center;
-        line-height: 1.5rem;
-        margin-bottom: 30px;
-        word-break: keep-all;
-        text-align: center;
+        color: $color-primary;
       }
+    }
+  }
+
+  @keyframes move {
+    from {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+    to {
+      opacity: 1;
+      transform: scaleX(1)
     }
   }
 }
