@@ -1,10 +1,11 @@
 <template>
-  <main>
-    <section>
-      <h1></h1>
-      <h1><span>.</span></h1>
-    </section>
-  </main>
+<main>
+  <section>
+    <h1></h1>
+    <h1><span>.</span></h1>
+  </section>
+  <router-link to='/tst'>Go</router-link>
+</main>
 </template>
 
 <script>
@@ -18,6 +19,14 @@ main {
   height: 100vh;
   padding: 30px;
 
+  a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    color: $color-black;
+  }
+
   section {
     width: 100%;
     height: 100%;
@@ -26,7 +35,7 @@ main {
     align-items: center;
     justify-content: center;
 
-    &:before {
+    &::before {
       content: '';
       position: fixed;
       top: 30px;
@@ -35,7 +44,6 @@ main {
       background-color: $color-primary;
       width: calc(50% - 30px);
       height: calc(100% - 60px);
-      animation: move 1.5s ease;
       transform-origin: left;
     }
 
@@ -46,15 +54,11 @@ main {
       font-size: 13rem;
       line-height: 11rem;
 
-      &:before {
-        transition: content 1s ease;
-      }
-
       &:first-child:after {
         content: 'He';
       }
 
-      &:first-child:hover:after {
+      &:first-child:hover::after {
         margin-right: 3px;
         content: 'Ha';
       }
@@ -63,11 +67,11 @@ main {
         margin-left: 15px;
       }
 
-      &:last-child:before {
+      &:last-child::before {
         content: 'llo';
       }
 
-      &:last-child:hover:before {
+      &:last-child:hover::before {
         margin-left: 14px;
         content: 'yy';
       }
@@ -75,17 +79,6 @@ main {
       span {
         color: $color-primary;
       }
-    }
-  }
-
-  @keyframes move {
-    from {
-      opacity: 0;
-      transform: scaleX(0);
-    }
-    to {
-      opacity: 1;
-      transform: scaleX(1)
     }
   }
 }
