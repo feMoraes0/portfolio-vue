@@ -1,31 +1,37 @@
-$transition-duration: 0.8s;
-$transition-delay: 0.25s;
+$transition-duration-base: 1s;
 
-.slide-fade-enter-active, .slide-fade-leave-active{
+.home-transition-enter-active,
+.home-transition-leave-active {
   transition-property: all;
+  transition-duration: $transition-duration-base;
   transition-timing-function: ease-in-out;
-  transition-duration: $transition-duration * 2;
+}
 
-  div, h1, h5 {
-    transition-property: all;
-    transition-timing-function: ease-in-out;
-    transition-duration: $transition-duration;
+.home-transition-enter,
+.home-transition-leave-to {
+  section::before {
+    opacity: 0;
+    transform: scaleX(200%);
+    transition-duration: $transition-duration-base;
   }
 
   h1 {
-    transition-delay: $transition-delay;
-  }
-
-  h5 {
-    transition-delay: $transition-delay * 2;
+    transform: translateY(-45%);
+    opacity: 0;
+    transition-duration: $transition-duration-base;
   }
 }
 
-.slide-fade-enter, .slide-fade-leave-to {
-  opacity: 0;
+.home-transition-enter-to {
+  section::before {
+    opacity: 1;
+    transform: scaleX(100%);
+    transition-duration: $transition-duration-base;
+  }
 
-  div, h1, h5 {
-    transform: translateY(-30px);
-    opacity: 0;
+  h1 {
+    transform: translateY(0);
+    opacity: 1;
+    transition-duration: $transition-duration-base;
   }
 }

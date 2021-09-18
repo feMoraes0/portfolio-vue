@@ -1,9 +1,7 @@
 <template>
-  <div id="app">
-    <transition name="slide-fade" mode="out-in" appear>
-      <router-view />
-    </transition>
-  </div>
+<transition name="home-transition" mode="out-in" appear>
+  <router-view />
+</transition>
 </template>
 
 <script>
@@ -28,5 +26,4 @@ body {
   height: 100vh;
   background-color: $color-background;
 }
-
 </style>
