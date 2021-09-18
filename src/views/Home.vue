@@ -4,7 +4,6 @@
     <h1></h1>
     <h1><span>.</span></h1>
   </section>
-  <router-link to='/tst'>Go</router-link>
 </main>
 </template>
 
@@ -18,14 +17,6 @@ export default {
 main {
   height: 100vh;
   padding: 30px;
-
-  a {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 999;
-    color: $color-black;
-  }
 
   section {
     width: 100%;
