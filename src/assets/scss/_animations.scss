@@ -18,6 +18,15 @@ $base_duration: 1s;
   }
 }
 
+@keyframes increaseRight {
+  0% {
+    transform: scaleX(100%);
+  }
+  100% {
+    transform: scaleX(200%);
+  }
+}
+
 @keyframes slideDown {
   0% {
     transform: translateY(-45%);
