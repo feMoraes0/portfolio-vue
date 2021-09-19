@@ -1,10 +1,12 @@
 <template>
-<main>
-  <section>
-    <h1></h1>
-    <h1><span>.</span></h1>
-  </section>
-</main>
+  <main>
+    <section class="initial">
+      <div>
+        <h1></h1>
+        <h1><span>.</span></h1>
+      </div>
+    </section>
+  </main>
 </template>
 
 <script>
@@ -14,13 +16,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-main {
-  height: 100vh;
+section.initial {
   padding: 30px;
 
-  section {
+  div {
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 60px);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -28,7 +29,7 @@ main {
 
     &::before {
       content: '';
-      position: fixed;
+      position: absolute;
       top: 30px;
       left: 30px;
       z-index: -1;
@@ -36,6 +37,8 @@ main {
       width: calc(50% - 30px);
       height: calc(100% - 60px);
       transform-origin: left;
+      animation: reduceLeft $base_duration ease-in-out,
+        show $base_duration ease-in-out;
     }
 
     h1 {
@@ -44,6 +47,8 @@ main {
       font-weight: bolder;
       font-size: 13rem;
       line-height: 11rem;
+      animation: slideDown $base_duration ease-in-out,
+        show $base_duration ease-in-out;
 
       &:first-child:after {
         content: 'He';
@@ -63,7 +68,7 @@ main {
       }
 
       &:last-child:hover::before {
-        margin-left: 14px;
+        margin-left: 13px;
         content: 'yy';
       }
 
