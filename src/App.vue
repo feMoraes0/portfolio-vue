@@ -1,7 +1,5 @@
 <template>
-<transition name="home-transition" mode="out-in" appear>
-  <router-view />
-</transition>
+  <router-view :key="$route.path" />
 </template>
 
 <script>
@@ -12,18 +10,12 @@ export default {
 
 <style lang="scss">
 * {
+  user-select: none;
   box-sizing: border-box;
   color: $color-white;
   font-family: $font-default;
   margin: 0;
   padding: 0;
   text-decoration: none;
-
-}
-
-body {
-  width: 100vw;
-  height: 100vh;
-  background-color: $color-background;
 }
 </style>
