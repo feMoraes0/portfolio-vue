@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/feMoraes0/portfolio-vue/compare/v1.0.0...v1.1.0) (2021-09-19)
+
+
+### Features
+
+* **animation:** new home enter and leave animation with scss and vue transition ([2e5a363](https://github.com/feMoraes0/portfolio-vue/commit/2e5a3637634d133866187c526113ab44b9a1c212))
+* **router:** add history mode to router config ([36453d5](https://github.com/feMoraes0/portfolio-vue/commit/36453d58abd29d4e8b7d3cf356d48b00906cab65))
+* **theme:** move body styles to themes files and removes generic styles ([20aea2f](https://github.com/feMoraes0/portfolio-vue/commit/20aea2fcf07a45afcdb687aeaa330d6255b98b58))
+
+
+### Bug Fixes
+
+* **home:** remove useless link used to test transitions ([1ab5900](https://github.com/feMoraes0/portfolio-vue/commit/1ab5900103a611a1787087a8e4ab6e33b6692661))
+
+
+### Refactors
+
+* **animations:** update the animations to use css based instead vuejs-transition ([081ccfb](https://github.com/feMoraes0/portfolio-vue/commit/081ccfb86ddf6f3103d369bf25ce13fda8d13884))
+* **app:** remove link style to app ([d6b354c](https://github.com/feMoraes0/portfolio-vue/commit/d6b354c52a3848fbbc27df3033acdc722a4b8dbc))
+* **app:** removes transition and update style tag content ([a51061e](https://github.com/feMoraes0/portfolio-vue/commit/a51061e7753166b268e59cf060107a149559cc46))
+* **assets:** update colours and add new font family ([80c9625](https://github.com/feMoraes0/portfolio-vue/commit/80c96252859ab77132d38f24cbc198f0e13b4ed2))
+* **home:** implement css animations ([80ee2e2](https://github.com/feMoraes0/portfolio-vue/commit/80ee2e2fe8a5a7881f5ce748d7c891bbfe4f29ce))
+* **home:** remove scss local animations to start to use vue transitions based one ([fbea8e0](https://github.com/feMoraes0/portfolio-vue/commit/fbea8e06ea55b6e795c06d9e053b4a1f62107757))
+* **home:** update home to new design with animations ([7e6bf37](https://github.com/feMoraes0/portfolio-vue/commit/7e6bf376562462e1a956c665961b3ba257ceb490))
+* **pagenotfound:** implements css animations andd update page style ([c356f99](https://github.com/feMoraes0/portfolio-vue/commit/c356f999b4d3c6d83ab1b8a76ffe1dc24424c661))
+
 ## [1.0.0](https://github.com/feMoraes0/portfolio-vue/compare/v0.1.2...v1.0.0) (2021-09-12)
 
 
