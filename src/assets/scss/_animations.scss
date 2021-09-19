@@ -1,37 +1,28 @@
-$transition-duration-base: 1s;
+$base_duration: 1s;
 
-.home-transition-enter-active,
-.home-transition-leave-active {
-  transition-property: all;
-  transition-duration: $transition-duration-base;
-  transition-timing-function: ease-in-out;
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.home-transition-enter,
-.home-transition-leave-to {
-  section::before {
-    opacity: 0;
+@keyframes reduceLeft {
+  0% {
     transform: scaleX(200%);
-    transition-duration: $transition-duration-base;
   }
-
-  h1 {
-    transform: translateY(-45%);
-    opacity: 0;
-    transition-duration: $transition-duration-base;
+  100% {
+    transform: scaleX(100%);
   }
 }
 
-.home-transition-enter-to {
-  section::before {
-    opacity: 1;
-    transform: scaleX(100%);
-    transition-duration: $transition-duration-base;
+@keyframes slideDown {
+  0% {
+    transform: translateY(-45%);
   }
-
-  h1 {
+  100% {
     transform: translateY(0);
-    opacity: 1;
-    transition-duration: $transition-duration-base;
   }
 }
