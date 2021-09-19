@@ -18,6 +18,8 @@ export default {
 
 <style lang="scss" scoped>
 main {
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,6 +28,7 @@ main {
   img {
     width: 15%;
     margin-bottom: 50px;
+    animation: show $base_duration;
   }
 
   h3 {
@@ -33,6 +36,12 @@ main {
     text-align: center;
     width: 20%;
     font-weight: 300;
+    color: $color-black;
+    animation: show $base_duration;
+
+    a {
+      color: $color-primary;
+    }
   }
 }
 </style>
