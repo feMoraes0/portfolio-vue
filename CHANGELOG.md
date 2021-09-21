@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/feMoraes0/portfolio-vue/compare/v1.1.0...v1.1.1) (2021-09-21)
+
+
+### Features
+
+* **animations:** implements home animations when scroll ([79fcbc2](https://github.com/feMoraes0/portfolio-vue/commit/79fcbc258f5ac4fe1ffc9da87f9102e8ac97afae))
+* **home:** add section to get key or informe your key ([114b470](https://github.com/feMoraes0/portfolio-vue/commit/114b4700cf1798212908c0a9c225e53c5512e507))
+
 ## [1.1.0](https://github.com/feMoraes0/portfolio-vue/compare/v1.0.0...v1.1.0) (2021-09-19)
 
 
