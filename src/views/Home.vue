@@ -8,6 +8,20 @@
         </div>
       </div>
     </section>
+    <section class="request-access">
+      <div>
+        <h1>Precisa de acesso a minha informação. Solicite acesso via e-mail:</h1>
+        <form action="/">
+          <input type="email" placeholder="Digite seu e-mail">
+        </form>
+      </div>
+      <div>
+        <h1>Já tenho uma chave de acesso. Informe aqui para ter acesso aos dados:</h1>
+        <form action="/">
+          <input type="text" placeholder="Informe sua chave de acesso">
+        </form>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -117,5 +131,45 @@ section.initial {
       color: $color-background !important;
     }
   }
+}
+
+section.request-access {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      color: $color-black;
+      font-size: 1.8rem;
+      width: 60%;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    form {
+      width: 50%;
+
+      input {
+        padding: 20px;
+        border: none;
+        border-radius: 10px;
+        width: 100%;
+        color: $color-black;
+        font-size: 1rem;
+        font-family: $font-default;
+      }
+    }
+  }
+
 }
 </style>
