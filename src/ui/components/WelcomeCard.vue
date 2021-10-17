@@ -26,6 +26,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  grid-area: 'welcome-card';
 
   h1 {
     font-size: 32px;

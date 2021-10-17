@@ -23,7 +23,7 @@ main.page {
     gap: 30px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
-      "simple nav nav simple2"
+      "simple nav nav welcome-card"
       "simple content advert advert"
       "sidenav sidenav advert advert"
     ;
