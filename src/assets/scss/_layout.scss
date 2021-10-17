@@ -24,24 +24,16 @@ main.page {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
       "simple nav nav welcome-card"
-      "simple content advert advert"
+      "simple social-card advert advert"
       "sidenav sidenav advert advert"
     ;
 
     .logo {
       grid-area: simple;
     }
-
-    .logo-2 {
-      grid-area: simple2
-    }
   
     .nav {
       grid-area: nav;
-    }
-  
-    .content {
-      grid-area: content;
     }
   
     .sidenav {
