@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: $font-default;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+main.page {
+  background-color: $background-color;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 30px 11vw;
+  overflow-y: scroll;
+
+  /* Grid */
+  section.grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "simple nav nav simple2"
+      "simple content advert advert"
+      "sidenav sidenav advert advert"
+    ;
+
+    .logo {
+      grid-area: simple;
+    }
+
+    .logo-2 {
+      grid-area: simple2
+    }
+  
+    .nav {
+      grid-area: nav;
+    }
+  
+    .content {
+      grid-area: content;
+    }
+  
+    .sidenav {
+      grid-area: sidenav;
+    }
+  
+    .advert {
+      grid-area: advert;
+    }
+  
+    .footer {
+      grid-area: footer;
+    }
+  }
+}
