@@ -4,6 +4,7 @@
   text-decoration: none;
   box-sizing: border-box;
   font-family: $font-default;
+  color: $font-color;
 }
 
 body {
@@ -14,19 +15,34 @@ main.page {
   background-color: $background-color;
   min-height: 100vh;
   width: 100vw;
-  padding: 30px 11vw;
+  padding: 20px 11vw;
   overflow-y: scroll;
+
+  p.content-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  h1.title-card {
+    font-size: 30px;
+    font-weight: 800;
+  }
 
   /* Grid */
   section.grid {
     display: grid;
-    gap: 30px;
+    gap: 20px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
       "simple nav nav welcome-card"
-      "simple social-card advert advert"
-      "sidenav sidenav advert advert"
+      "photo social-card advert advert"
+      "photo footer advert advert"
+      "about-card about-card advert advert"
     ;
+
+    .photo {
+      grid-area: photo;
+    }
 
     .logo {
       grid-area: simple;
@@ -35,11 +51,7 @@ main.page {
     .nav {
       grid-area: nav;
     }
-  
-    .sidenav {
-      grid-area: sidenav;
-    }
-  
+
     .advert {
       grid-area: advert;
     }
