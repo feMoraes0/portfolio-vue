@@ -12,9 +12,13 @@ export default {
 
 <style lang="scss" scoped>
 div {
-  background-color: $white-color;
+  background-color: $card-background;
   min-height: 300px;
   border-radius: 16px;
   padding: 40px;
+
+  &.small {
+    min-height: 150px;
+  }
 }
 </style>

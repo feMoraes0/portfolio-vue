@@ -1,5 +1,5 @@
 <template>
-  <Card class="social-card">
+  <Card class="social-card small">
     <a href="/">
       <img src="@/assets/icons/email.svg" alt="email">
     </a>
