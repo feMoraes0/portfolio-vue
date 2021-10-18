@@ -1,7 +1,7 @@
 <template>
   <Card class="welcome-card">
-    <h1>Hey, dude!</h1>
-    <p>
+    <h1 class="title-card">Hey, dude!</h1>
+    <p class="content-text">
       Thanks for visit my website/portfolio. I hope that you enjoy
       the experience and learn more about me and my projects. Any improvement,
       suggestion or invites, contact me.
@@ -25,19 +25,9 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
-  grid-area: 'welcome-card';
 
   h1 {
-    font-size: 32px;
-    font-weight: 800;
     margin-bottom: 15px;
-  }
-
-  p {
-    position: relative;
-    font-size: 14px;
-    line-height: 20px;
   }
 }
 </style>
