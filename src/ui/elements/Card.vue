@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="card">
     <slot />
   </div>
 </template>
@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-div {
+div.card {
   background-color: $card-background;
   min-height: 270px;
   border-radius: 16px;
