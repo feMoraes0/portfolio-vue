@@ -29,5 +29,6 @@ export default {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  grid-area: social-card;
 }
 </style>

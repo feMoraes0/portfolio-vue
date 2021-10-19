@@ -25,6 +25,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  grid-area: welcome-card;
 
   h1 {
     margin-bottom: 15px;
