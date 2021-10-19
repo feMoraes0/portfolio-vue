@@ -10,7 +10,7 @@
       <SocialCard />
       <AboutCard class="about-card"/>
 
-      <SocialCard class="footer" />
+      <ThemeCard />
 
       <WelcomeCard class="advert" />
     </section>
@@ -22,6 +22,7 @@ import AboutCard from '@/ui/components/AboutCard.vue';
 import SocialCard from '@/ui/components/SocialCard.vue';
 import WelcomeCard from '@/ui/components/WelcomeCard.vue';
 import PhotoCard from '@/ui/components/PhotoCard.vue';
+import ThemeCard from '../components/ThemeCard.vue';
 
 export default {
   name: 'Home',
@@ -30,6 +31,7 @@ export default {
     SocialCard,
     WelcomeCard,
     PhotoCard,
+    ThemeCard,
   },
 };
 </script>
