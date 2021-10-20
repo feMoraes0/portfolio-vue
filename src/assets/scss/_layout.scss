@@ -35,9 +35,9 @@ main.page {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
       "simple nav nav welcome-card"
-      "photo social-card advert advert"
-      "photo theme-card advert advert"
-      "about-card about-card advert advert"
+      "photo social-card projects-card projects-card"
+      "photo theme-card projects-card projects-card"
+      "about-card about-card projects-card projects-card"
     ;
 
     .photo {
