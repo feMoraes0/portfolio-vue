@@ -2,3 +2,55 @@
 
 @import 'variables';
 @import 'layout';
+
+
+main#main-container {
+  * {
+    transition: all 1s ease-in-out;
+  }
+
+  &.light-theme {
+    .page {
+      background-color: $light-page-background;
+    }
+
+    .card {
+      background-color: $light-card-background;
+
+      p, h1, h2, h3, h4, h5, span {
+        color: $light-font-color;
+      }
+    }
+
+    div.switch {
+      background-color: $light-page-background;
+
+      div.slider {
+        background-color: $light-card-background;
+      }
+    }
+  }
+
+  &.dark-theme {
+    .page {
+      background-color: $dark-page-background;
+    }
+
+    .card {
+      background-color: $dark-card-background;
+
+      p, h1, h2, h3, h4, h5, span {
+        color: $dark-font-color;
+      }
+    }
+
+    div.switch {
+      background-color: $dark-page-background;
+
+      div.slider {
+        background-color: $dark-card-background;
+      }
+    }
+
+  }
+}
