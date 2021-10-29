@@ -12,7 +12,6 @@ export default {
 
 <style lang="scss" scoped>
 div.card {
-  background-color: $card-background;
   min-height: 270px;
   border-radius: 16px;
   padding: 40px;
