@@ -22,6 +22,10 @@ main#main-container {
       }
     }
 
+    svg {
+      stroke: $light-font-color !important;
+    }
+
     div.switch {
       background-color: $light-page-background;
 
@@ -42,6 +46,10 @@ main#main-container {
       p, h1, h2, h3, h4, h5, span {
         color: $dark-font-color;
       }
+    }
+
+    svg {
+      stroke: $dark-font-color !important;
     }
 
     div.switch {

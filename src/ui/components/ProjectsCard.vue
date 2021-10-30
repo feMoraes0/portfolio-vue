@@ -10,10 +10,10 @@
       </div>
       <div class="controls">
         <button>
-          <img src="@/assets/icons/arrow-left.svg" alt="arrow-left">
+          <ArrowLeft />
         </button>
         <button>
-          <img src="@/assets/icons/arrow-right.svg" alt="arrow-right">
+          <ArrowRight />
         </button>
       </div>
     </header>
@@ -24,12 +24,16 @@
 <script>
 import Card from '@/ui/elements/Card.vue';
 import CustomLabel from '@/ui/elements/CustomLabel.vue';
+import ArrowLeft from '@/assets/icons/arrow-left.svg';
+import ArrowRight from '@/assets/icons/arrow-right.svg';
 
 export default {
   name: 'ProjectsCard',
   components: {
     Card,
     CustomLabel,
+    ArrowLeft,
+    ArrowRight,
   },
 };
 </script>
@@ -70,6 +74,9 @@ export default {
 
       button {
         padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 50px;
         width: 50px;
         border-radius: 20px;
@@ -78,11 +85,6 @@ export default {
 
         &:first-child {
           margin-right: 8px;
-        }
-
-        img {
-          width: 100%;
-          height: 100%;
         }
       }
     }
