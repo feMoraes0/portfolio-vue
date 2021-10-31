@@ -2,8 +2,8 @@
   <main class="page">
     <section class="grid">
       <CountCard :counter="1.8" subtitle="years of experience" />
-      <WelcomeCard class="nav" />
       <WelcomeCard />
+      <CountCard class="github-card" :counter="210" subtitle="GitHub Stars" />
 
       <PhotoCard />
 
