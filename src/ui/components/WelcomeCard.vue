@@ -2,7 +2,7 @@
   <Card class="welcome-card">
     <h1 class="title-card">Hey, dude!</h1>
     <p class="content-text">
-      Thanks for visit my website/portfolio. I hope that you enjoy
+      Thanks for visit my website. I hope that you enjoy
       the experience and learn more about me and my projects. Any improvement,
       suggestion or invites, contact me.
     </p>

@@ -1,5 +1,5 @@
 <template>
-  <Card class="photo">
+  <Card class="photo-card">
     <img src="@/assets/images/user-photo.png" alt="user">
   </Card>
 </template>
@@ -16,12 +16,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.photo {
+.photo-card {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #85C5E5;
+  grid-area: photo-card;
 
   img {
     height: 240px;
