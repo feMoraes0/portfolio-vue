@@ -1,7 +1,7 @@
 <template>
   <main class="page">
     <section class="grid">
-      <WelcomeCard class="logo" />
+      <ExperienceCard />
       <WelcomeCard class="nav" />
       <WelcomeCard />
 
@@ -20,6 +20,7 @@
 <script>
 import AboutCard from '@/ui/components/AboutCard.vue';
 import SocialCard from '@/ui/components/SocialCard.vue';
+import ExperienceCard from '@/ui/components/ExperienceCard.vue';
 import WelcomeCard from '@/ui/components/WelcomeCard.vue';
 import PhotoCard from '@/ui/components/PhotoCard.vue';
 import ProjectsCard from '@/ui/components/ProjectsCard.vue';
@@ -29,6 +30,7 @@ export default {
   name: 'Home',
   components: {
     AboutCard,
+    ExperienceCard,
     SocialCard,
     WelcomeCard,
     PhotoCard,

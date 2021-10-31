@@ -32,7 +32,7 @@ main.page {
     gap: 20px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
-      "simple nav nav welcome-card"
+      "experience-card nav nav welcome-card"
       "photo social-card projects-card projects-card"
       "photo theme-card projects-card projects-card"
       "about-card about-card projects-card projects-card"
