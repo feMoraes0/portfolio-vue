@@ -1,8 +1,8 @@
 <template>
-  <Card class="experience-card">
+  <Card class="count-card">
     <p>more than</p>
-    <h1>1.8</h1>
-    <p>years of experience</p>
+    <h1>{{ counter.toString() }}</h1>
+    <p>{{ subtitle }}</p>
   </Card>
 </template>
 
@@ -13,16 +13,26 @@ export default {
   components: {
     Card,
   },
+  props: {
+    counter: {
+      type: Number,
+      required: true,
+    },
+    subtitle: {
+      type: String,
+      required: true,
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
-.experience-card {
+.count-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  grid-area: experience-card;
+  grid-area: count-card;
 
   p {
     font-size: 20px;
