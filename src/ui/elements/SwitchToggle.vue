@@ -26,20 +26,20 @@ export default {
 
 <style lang="scss" scoped>
 .switch {
-  width: 60px;
+  width: 55px;
   height: 30px;
   border-radius: 20px;
 
   div.slider {
     position: relative;
-    top: 2px;
-    left: 2px;
-    height: 26px;
-    width: 26px;
+    top: 4px;
+    left: 4px;
+    height: 22px;
+    width: 22px;
     border-radius: 100%;
 
     &.off {
-      transform: translateX(30px);
+      transform: translateX(25px);
     }
   }
 }
