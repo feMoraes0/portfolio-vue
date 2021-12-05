@@ -1,3 +1,10 @@
+# [2.3.0](https://github.com/feMoraes0/portfolio-vue/compare/v2.2.2...v2.3.0) (2021-12-05)
+
+
+### Features
+
+* **resume:** adds new component, unit test and adds new font family ([a7f48b7](https://github.com/feMoraes0/portfolio-vue/commit/a7f48b75f399ef363a2aca9b4d3a7882e5dc644f))
+
 ## [2.2.2](https://github.com/feMoraes0/portfolio-vue/compare/v2.2.1...v2.2.2) (2021-12-05)
 
 
