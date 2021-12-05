@@ -2,6 +2,52 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/feMoraes0/portfolio-vue/compare/v1.1.1...v2.0.0) (2021-12-05)
+
+
+### Features
+
+* **about-card:** adds new component with about information ([9fba25f](https://github.com/feMoraes0/portfolio-vue/commit/9fba25fae4e773444d52db678b027cd81ac51fd5))
+* **aboutme:** adds new component About Me ([4b1de20](https://github.com/feMoraes0/portfolio-vue/commit/4b1de203b3a7af11b2a30e0b06a73e75443e9bcb))
+* **assets:** includes variables and layout styles to scss asset ([5d64222](https://github.com/feMoraes0/portfolio-vue/commit/5d64222d119955d43fbdbc7fb39741d7d08a2c42))
+* **card:** add new element to represent the card container ([c35b3de](https://github.com/feMoraes0/portfolio-vue/commit/c35b3de43f51d0859313a910210b69310ccfeffa))
+* **custom-label:** adds new custom label element ([2b1eb58](https://github.com/feMoraes0/portfolio-vue/commit/2b1eb5810c21b6dc836fd877fa221a136952dd80))
+* **experience-card:** adds new component card ([9f264ac](https://github.com/feMoraes0/portfolio-vue/commit/9f264ac7fd32ffcc8f3377f61ac5429762f361d6))
+* **icons:** includes social media svg icons ([2771a23](https://github.com/feMoraes0/portfolio-vue/commit/2771a23b8b760e16140f5691540037bdcd96533f))
+* **layout:** adds new github card using count card ([70d46f0](https://github.com/feMoraes0/portfolio-vue/commit/70d46f0ade09a36b213445c43e4420672cf5fe15))
+* **layout:** updates layout and card sizes ([fc92eb6](https://github.com/feMoraes0/portfolio-vue/commit/fc92eb697f4383ec04adda62d2cc7d4870aae666))
+* **photo-card:** adds new component card with photo image, new asset and includes card to home ([20a1bfb](https://github.com/feMoraes0/portfolio-vue/commit/20a1bfb7f576cd3b2bf8914b8820b45be105d9d2))
+* **project:** restart project layout ([6dd980c](https://github.com/feMoraes0/portfolio-vue/commit/6dd980cb7696e8d65664f8d3ec4f2eaef626c47e))
+* **project:** restructure project folders to separate files by meaning ([8dd644d](https://github.com/feMoraes0/portfolio-vue/commit/8dd644d1568d203f06536095a76be33937b6e6ee))
+* **projects-card:** adds new projects card component and includes to grid at home screen ([761aa51](https://github.com/feMoraes0/portfolio-vue/commit/761aa51ec4c5a30ccaff85dcd8fa889c06916176))
+* **scss:** updates colours and add new one ([484a33b](https://github.com/feMoraes0/portfolio-vue/commit/484a33b24f7e0fe4262f76e49310405fc68afc08))
+* **social-card:** adds new component to show social media links ([d574c78](https://github.com/feMoraes0/portfolio-vue/commit/d574c782d934ae730716a8a4d82e9799a36c6eee))
+* **switch-toggle:** adds new element ([68d3fdb](https://github.com/feMoraes0/portfolio-vue/commit/68d3fdbd4b6ce527e8820997bd4aac7fa0f96eba))
+* **theme-card:** adds new theme card component ([0019805](https://github.com/feMoraes0/portfolio-vue/commit/00198056727f8b3a9d97b82beea3b65fa6965d7c))
+* **theme:** defines theme colours and reorganize files ([6f02abe](https://github.com/feMoraes0/portfolio-vue/commit/6f02abe1da818d6b4e55c00642b1cadef00a772a))
+* **welcome-card:** adds new component as piece of main page with welcome message ([cf82e2a](https://github.com/feMoraes0/portfolio-vue/commit/cf82e2aea55d0217967e61b21b408a0b38c28022))
+
+
+### Bug Fixes
+
+* **card:** adds new small card size and updates social card to use it ([11f895d](https://github.com/feMoraes0/portfolio-vue/commit/11f895d36d64d23431cb79c410b23e19e43d396a))
+* **card:** updates style to only be applied on card and not in their sons ([c2d53f2](https://github.com/feMoraes0/portfolio-vue/commit/c2d53f2f5a4d22576de74b042c7b140bded057a5))
+* **home:** updates elements and imports ([e2e34bf](https://github.com/feMoraes0/portfolio-vue/commit/e2e34bf90b67028ca613b30b0b246de3608dba27))
+
+
+### Refactors
+
+* **count-card:** rename experience card to count card and redefines the logic of the component ([d497a3f](https://github.com/feMoraes0/portfolio-vue/commit/d497a3f1c5a8974e6e46012bc9098f15ecd7d221))
+* **home:** updates home screen with new component About Me and animation ([18f7e89](https://github.com/feMoraes0/portfolio-vue/commit/18f7e89f59a16cab3b9ac86bdf046abc878ebea0))
+* **social/welcome:** adds grid-area name to social and welcome cards ([cf8f154](https://github.com/feMoraes0/portfolio-vue/commit/cf8f154309cc0f112ed199b4b96818aa4c1fe2af))
+* **src:** updates names, times and texts in some files ([d854b9c](https://github.com/feMoraes0/portfolio-vue/commit/d854b9ca51247394e8520d046b555f29e60d7bdb))
+* **svg:** updates components and theme to use svg files and change stroke colour ([6500c0b](https://github.com/feMoraes0/portfolio-vue/commit/6500c0b8b261fb20222ff820b23a60fc0994f131))
+* **switch-toggle:** updates switch size ([aa0a5a7](https://github.com/feMoraes0/portfolio-vue/commit/aa0a5a7c770c4d08b02caec62aa85351107ad80b))
+* **theme-card:** changes the theme card component to new style with switch toggle ([c5fbff8](https://github.com/feMoraes0/portfolio-vue/commit/c5fbff81777350b7411447abce51936bd33cf530))
+* **theme:** updates components with new theme variables ([1a0ff46](https://github.com/feMoraes0/portfolio-vue/commit/1a0ff46d1290920811247ce880ddedca1323fdb8))
+* **welcome-card:** updates title and content text class ([d65f02d](https://github.com/feMoraes0/portfolio-vue/commit/d65f02d0ebb0121b02ebfe460220d29d231c1eb8))
+* **welcome-card:** updates welcome card references at grid template ([ae1beaf](https://github.com/feMoraes0/portfolio-vue/commit/ae1beafc34dcae230db6acc8964affc869aebfd5))
+
 ### [1.1.1](https://github.com/feMoraes0/portfolio-vue/compare/v1.1.0...v1.1.1) (2021-09-21)
 
 
