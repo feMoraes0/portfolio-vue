@@ -1,3 +1,10 @@
+# [2.4.0](https://github.com/feMoraes0/portfolio-vue/compare/v2.3.0...v2.4.0) (2021-12-05)
+
+
+### Features
+
+* **home:** adds resume component to home page ([2120174](https://github.com/feMoraes0/portfolio-vue/commit/2120174fa0dc594b0a61487f05cb19f826b1ddab))
+
 # [2.3.0](https://github.com/feMoraes0/portfolio-vue/compare/v2.2.2...v2.3.0) (2021-12-05)
 
 
