@@ -40,6 +40,9 @@ jobs:
       - name: Install dependencies
         run: npm install
       
+      - name: Run unit tests
+        run: npm run test:unit
+      
       - name: Release new version
         run: npm run release
         env:
