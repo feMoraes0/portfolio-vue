@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/feMoraes0/portfolio-vue/compare/v2.1.0...v2.2.0) (2021-12-05)
+
+
+### Features
+
+* adds header component to app and unit tests ([dbd8b8b](https://github.com/feMoraes0/portfolio-vue/commit/dbd8b8b7378a80b95611f9bd6bc23ac7d2d2e79b))
+
 # [2.1.0](https://github.com/feMoraes0/portfolio-vue/compare/v2.0.0...v2.1.0) (2021-12-05)
 
 
