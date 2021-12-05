@@ -1,3 +1,10 @@
+## [2.2.2](https://github.com/feMoraes0/portfolio-vue/compare/v2.2.1...v2.2.2) (2021-12-05)
+
+
+### Bug Fixes
+
+* **eslint:** removes rule that order imports ([6cc3b74](https://github.com/feMoraes0/portfolio-vue/commit/6cc3b747a5b3e9336d9f039b257db20775340629))
+
 ## [2.2.1](https://github.com/feMoraes0/portfolio-vue/compare/v2.2.0...v2.2.1) (2021-12-05)
 
 
