@@ -1,0 +1,178 @@
+<template>
+  <main class='resume'>
+    <section class='introduction-box'>
+      <h1>
+        <span>Fernando Moraes</span>
+        <span>Full-Stack Developer</span>
+        <span>Based in São Paulo</span>
+      </h1>
+    </section>
+    <section class='user-data-box'>
+      <div class="user-data-info left">
+        <div>
+          <p class="info-title">
+            Biography
+          </p>
+          <p class="info-content">
+            JavaScript and TypeScript entusiast
+            who is highly oriented to develop best experiences
+          </p>
+        </div>
+        <div>
+          <p class="info-title">
+            Graduation
+          </p>
+          <p class="info-content list">
+            <span>Computer Science</span>
+            <span>2014 - 2018</span>
+          </p>
+        </div>
+        <div>
+          <p class="info-title">
+            contact
+          </p>
+          <p class="info-content list">
+            <span>São Pauo, Brazil</span>
+            <span>LinkedIn</span>
+          </p>
+        </div>
+        <div>
+          <p class="info-title">
+            Services
+          </p>
+          <p class="info-content list">
+            <span>Web Application</span>
+            <span>Mobile Application</span>
+            <span>API development</span>
+          </p>
+        </div>
+      </div>
+      <p class="image">IMAGE</p>
+      <div class="user-data-info right">
+        <div>
+          <p class="info-title">Years of  <br/>Experience</p>
+          <p class="info-content big-text">1.5 +</p>
+        </div>
+        <div>
+          <p class="info-title">Companies</p>
+          <p class="info-content big-text">3</p>
+        </div>
+        <div>
+          <p class="info-title">Repositories</p>
+          <p class="info-content big-text">75</p>
+        </div>
+        <div>
+          <p class="info-title">Stars</p>
+          <p class="info-content big-text">228</p>
+        </div>
+      </div>
+    </section>
+    <div class="divider" />
+  </main>
+</template>
+
+<script>
+export default {
+  name: 'Resume',
+};
+</script>
+
+<style lang="scss" scoped>
+.resume {
+
+  .introduction-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7rem 0;
+
+    h1 {
+      font-size: 6.2rem;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      span {
+        line-height: 10rem;
+        letter-spacing: .2rem;
+        font-family: $font-bitter;
+      }
+    }
+  }
+
+  .user-data-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-top: 10rem;
+    margin-bottom: 15rem;
+
+    .image {
+      flex: 2;
+      border: 1px solid white;
+      color: white;
+    }
+
+    .user-data-info {
+      flex: 1;
+
+      &.left {
+        padding-right: 20rem;
+      }
+
+      &.right {
+        padding-left: 20rem;
+        text-align: right;
+
+        div {
+          margin-bottom: 9rem;
+        }
+      }
+
+      div {
+        margin-bottom: 5rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .info-title {
+          font-size: 1.6rem;
+          color: #aaa;
+          text-transform: uppercase;
+          margin-bottom: 3rem;
+        }
+
+        .info-content {
+          font-family: $font-bitter;
+          font-size: 2rem;
+          line-height: 2.8rem;
+
+          &.list {
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+
+            span {
+              font-family: $font-bitter;
+              margin-bottom: 1.5rem;
+            }
+          }
+        }
+      }
+
+      .big-text {
+        font-size: 5rem !important;
+        line-height: 5.5rem !important;
+      }
+    }
+  }
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+  }
+}
+</style>
