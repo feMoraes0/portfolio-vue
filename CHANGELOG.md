@@ -1,3 +1,15 @@
+# [2.1.0](https://github.com/feMoraes0/portfolio-vue/compare/v2.0.0...v2.1.0) (2021-12-05)
+
+
+### Bug Fixes
+
+* **header:** adds logo icon used on header component and required to pass the test ([54d8857](https://github.com/feMoraes0/portfolio-vue/commit/54d88578facde98f88c20a028b2f4fb4e94c6254))
+
+
+### Features
+
+* **header:** adds header component and unit tests ([9d5207a](https://github.com/feMoraes0/portfolio-vue/commit/9d5207af8c2e2cd29347ef1de82142789addd56b))
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
