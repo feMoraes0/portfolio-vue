@@ -1,3 +1,10 @@
+## [2.2.1](https://github.com/feMoraes0/portfolio-vue/compare/v2.2.0...v2.2.1) (2021-12-05)
+
+
+### Bug Fixes
+
+* **style:** adds initial scss file and fix layout style ([659e589](https://github.com/feMoraes0/portfolio-vue/commit/659e589baa40681fd6417f209dc98d778c213757))
+
 # [2.2.0](https://github.com/feMoraes0/portfolio-vue/compare/v2.1.0...v2.2.0) (2021-12-05)
 
 
