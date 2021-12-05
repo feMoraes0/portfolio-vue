@@ -7,4 +7,9 @@ describe('Home', () => {
     // THEN
     expect(Home.name).toBe(filename);
   });
+
+  it('Should has resume component as dependency', () => {
+    // THEN
+    expect(Home.components).toHaveProperty('Resume');
+  });
 });

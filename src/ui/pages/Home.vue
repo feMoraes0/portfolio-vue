@@ -1,11 +1,16 @@
 <template>
   <main class="page">
-    <p>Reseting page</p>
+    <Resume />
   </main>
 </template>
 
 <script>
+import Resume from '../components/Resume.vue';
+
 export default {
   name: 'Home',
+  components: {
+    Resume,
+  },
 };
 </script>
