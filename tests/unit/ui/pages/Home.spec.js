@@ -1,5 +1,5 @@
-import { shallowMount } from '@vue/test-utils';
 import Home from '@/ui/pages/Home.vue';
+import { shallowMount } from '@vue/test-utils';
 
 describe('Home', () => {
   const wrapper = shallowMount(Home);
