@@ -8,7 +8,7 @@
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "commit": "cz",
-    "release": "standard-version"
+    "release": "semantic-release"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -18,6 +18,11 @@
     "vuex": "^3.4.0"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.2",
+    "@semantic-release/npm": "^8.0.3",
+    "@semantic-release/release-notes-generator": "^10.0.3",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-plugin-router": "~4.5.0",
@@ -33,7 +38,7 @@
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^6.2.2",
     "sass-loader": "^8.0.2",
-    "standard-version": "^9.3.1",
+    "semantic-release": "^18.0.1",
     "vue-svg-loader": "^0.16.0",
     "vue-template-compiler": "^2.6.14"
   }
