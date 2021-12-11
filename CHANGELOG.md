@@ -1,3 +1,10 @@
+## [2.5.1](https://github.com/feMoraes0/portfolio-vue/compare/v2.5.0...v2.5.1) (2021-12-11)
+
+
+### Bug Fixes
+
+* **minor:** removes menu option, wrong text type and updates serif font family ([6eaad7d](https://github.com/feMoraes0/portfolio-vue/commit/6eaad7dcece4a50f9b08484e7ef3bf8ed37bf957))
+
 # [2.5.0](https://github.com/feMoraes0/portfolio-vue/compare/v2.4.0...v2.5.0) (2021-12-11)
 
 
