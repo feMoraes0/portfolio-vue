@@ -1,3 +1,10 @@
+# [2.5.0](https://github.com/feMoraes0/portfolio-vue/compare/v2.4.0...v2.5.0) (2021-12-11)
+
+
+### Features
+
+* **resume:** adds main image to resume component ([c6412be](https://github.com/feMoraes0/portfolio-vue/commit/c6412bedf19a026f1a18a4855ba47d1eb4017013))
+
 # [2.4.0](https://github.com/feMoraes0/portfolio-vue/compare/v2.3.0...v2.4.0) (2021-12-05)
 
 
