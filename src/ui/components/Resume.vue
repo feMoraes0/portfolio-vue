@@ -15,7 +15,7 @@
           </p>
           <p class="info-content">
             JavaScript and TypeScript entusiast
-            who is highly oriented to develop best experiences
+            who is highly oriented to develop 2 best experiences
           </p>
         </div>
         <div>
@@ -47,7 +47,11 @@
           </p>
         </div>
       </div>
-      <p class="image">IMAGE</p>
+      <div class="user-data-image">
+        <div class="user-data-image-box">
+          <img src="@/assets/images/hand-rock.png" alt="hand rock">
+        </div>
+      </div>
       <div class="user-data-info right">
         <div>
           <p class="info-title">Years of  <br/>Experience</p>
@@ -79,7 +83,6 @@ export default {
 
 <style lang="scss" scoped>
 .resume {
-
   .introduction-box {
     display: flex;
     align-items: center;
@@ -109,10 +112,30 @@ export default {
     margin-top: 10rem;
     margin-bottom: 15rem;
 
-    .image {
+    .user-data-image {
+      display: flex;
       flex: 2;
-      border: 1px solid white;
-      color: white;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      border: 1px solid #aaa;
+      border-radius: 450px;
+
+      &-box {
+        border-radius: 350px;
+        height: 85%;
+        width: 85%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, .2);
+
+        img {
+          width: 50%;
+          transform: translateY(3px);
+        }
+      }
     }
 
     .user-data-info {
@@ -169,6 +192,7 @@ export default {
       }
     }
   }
+
   .divider {
     width: 100%;
     height: 1px;
