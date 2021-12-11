@@ -15,7 +15,7 @@
           </p>
           <p class="info-content">
             JavaScript and TypeScript entusiast
-            who is highly oriented to develop 2 best experiences
+            who is highly oriented to develop best experiences
           </p>
         </div>
         <div>
@@ -87,10 +87,10 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 7rem 0;
+    padding: 10rem 0;
 
     h1 {
-      font-size: 6.2rem;
+      font-size: 7rem;
       display: flex;
       flex-direction: column;
       text-align: center;
@@ -98,7 +98,7 @@ export default {
       span {
         line-height: 10rem;
         letter-spacing: .2rem;
-        font-family: $font-bitter;
+        font-family: $font-serif;
       }
     }
   }
@@ -169,7 +169,7 @@ export default {
         }
 
         .info-content {
-          font-family: $font-bitter;
+          font-family: $font-serif;
           font-size: 2rem;
           line-height: 2.8rem;
 
@@ -179,7 +179,7 @@ export default {
             flex-direction: column;
 
             span {
-              font-family: $font-bitter;
+              font-family: $font-serif;
               margin-bottom: 1.5rem;
             }
           }

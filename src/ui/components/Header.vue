@@ -1,7 +1,6 @@
 <template>
   <header class="container">
     <ul class="menu-box">
-      <li>About</li>
       <li>Projects</li>
       <li>Experience</li>
       <li>Contact</li>
