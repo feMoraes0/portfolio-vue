@@ -1,3 +1,10 @@
+## [2.5.2](https://github.com/feMoraes0/portfolio-vue/compare/v2.5.1...v2.5.2) (2021-12-12)
+
+
+### Bug Fixes
+
+* **resume:** updates text title and content of one of sections ([b085357](https://github.com/feMoraes0/portfolio-vue/commit/b08535717bba221c0cba3eec6abffc679152adf3))
+
 ## [2.5.1](https://github.com/feMoraes0/portfolio-vue/compare/v2.5.0...v2.5.1) (2021-12-11)
 
 
