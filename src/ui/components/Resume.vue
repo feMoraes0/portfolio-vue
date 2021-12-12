@@ -29,11 +29,11 @@
         </div>
         <div>
           <p class="info-title">
-            contact
+            Nationalities
           </p>
           <p class="info-content list">
-            <span>São Pauo, Brazil</span>
-            <span>LinkedIn</span>
+            <span>Brazilian</span>
+            <span>Italian</span>
           </p>
         </div>
         <div>
