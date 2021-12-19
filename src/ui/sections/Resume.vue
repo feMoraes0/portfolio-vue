@@ -71,7 +71,7 @@
         </div>
       </div>
     </section>
-    <div class="divider" />
+    <div class="section-divider" />
   </main>
 </template>
 
@@ -191,12 +191,6 @@ export default {
         line-height: 5.5rem !important;
       }
     }
-  }
-
-  .divider {
-    width: 100%;
-    height: 1px;
-    background-color: #000;
   }
 }
 </style>

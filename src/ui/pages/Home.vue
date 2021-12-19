@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Resume from '../components/Resume.vue';
+import Resume from '../sections/Resume.vue';
 
 export default {
   name: 'Home',

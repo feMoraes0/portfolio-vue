@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Header from '@/ui/components/Header.vue';
+import Header from '@/ui/sections/Header.vue';
 
 export default {
   name: 'App',
