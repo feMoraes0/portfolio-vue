@@ -38,10 +38,16 @@
     "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^6.2.2",
-    "husky": "^7.0.4",
+    "husky": "^4.3.8",
     "sass-loader": "^8.0.2",
     "semantic-release": "^18.0.1",
     "vue-svg-loader": "^0.16.0",
     "vue-template-compiler": "^2.6.14"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run pre-push",
+      "pre-commit": "npm run lint"
+    }
   }
 }
