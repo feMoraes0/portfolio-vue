@@ -1,6 +1,7 @@
 <template>
   <main class="page">
     <Resume />
+    <div class="section-divider" />
   </main>
 </template>
 

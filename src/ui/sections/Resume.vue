@@ -71,7 +71,6 @@
         </div>
       </div>
     </section>
-    <div class="section-divider" />
   </main>
 </template>
 
@@ -110,7 +109,6 @@ export default {
     align-items: stretch;
     justify-content: space-between;
     margin-top: 10rem;
-    margin-bottom: 15rem;
 
     .user-data-image {
       display: flex;
