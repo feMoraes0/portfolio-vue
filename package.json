@@ -12,6 +12,7 @@
     "pre-push": "npm run test:unit && npm run lint"
   },
   "dependencies": {
+    "axios": "^0.24.0",
     "core-js": "^3.6.5",
     "node-sass": "^4.14.1",
     "vue": "^2.6.11",
