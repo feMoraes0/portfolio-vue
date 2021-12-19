@@ -2,9 +2,9 @@
   <main class='resume'>
     <section class='introduction-box'>
       <h1>
-        <span>Fernando Moraes</span>
-        <span>Full-Stack Developer</span>
-        <span>Based in São Paulo</span>
+        <span>{{user.name}}</span>
+        <span>{{user.profession}}</span>
+        <span>Based in {{user.location}}</span>
       </h1>
     </section>
     <section class='user-data-box'>
@@ -77,6 +77,16 @@
 <script>
 export default {
   name: 'Resume',
+  props: {
+    user: {
+      type: Object,
+      required: true,
+      validator(received) {
+        const { name, profession, location } = received;
+        return (!!name && !!profession && !!location);
+      },
+    },
+  },
 };
 </script>
 
