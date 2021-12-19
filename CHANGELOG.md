@@ -1,3 +1,11 @@
+# [2.6.0](https://github.com/feMoraes0/portfolio-vue/compare/v2.5.3...v2.6.0) (2021-12-19)
+
+
+### Features
+
+* **github-api:** creates github-api service connection and refactor home component ([4d4216e](https://github.com/feMoraes0/portfolio-vue/commit/4d4216e3751a17f67ab9d30e9ebf5a1d5ca16c53))
+* **github-api:** creates github-api service connection and refactor home component ([44bcdb9](https://github.com/feMoraes0/portfolio-vue/commit/44bcdb902498a532e739352d4893dc175c5f6504))
+
 ## [2.5.3](https://github.com/feMoraes0/portfolio-vue/compare/v2.5.2...v2.5.3) (2021-12-19)
 
 
