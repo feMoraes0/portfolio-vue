@@ -1,3 +1,10 @@
+## [2.5.3](https://github.com/feMoraes0/portfolio-vue/compare/v2.5.2...v2.5.3) (2021-12-19)
+
+
+### Bug Fixes
+
+* **husky:** downgrade husky version and moves script to package.json ([8ba9364](https://github.com/feMoraes0/portfolio-vue/commit/8ba93645080f6104e3fb24320ead4f58a0128c0d))
+
 ## [2.5.2](https://github.com/feMoraes0/portfolio-vue/compare/v2.5.1...v2.5.2) (2021-12-12)
 
 
