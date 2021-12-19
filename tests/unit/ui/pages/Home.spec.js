@@ -18,14 +18,8 @@ describe('Home', () => {
 
   describe('Data', () => {
     it('Should validate initial data values', () => {
-      // GIVEN
-      const user = {
-        name: 'Fernando Moraes',
-        profession: 'Full-Stack Developer',
-        location: 'São Paulo',
-      };
       // THEN
-      expect(wrapper.vm.user).toEqual(user);
+      expect(wrapper.vm.user).toEqual(undefined);
     });
   });
 });

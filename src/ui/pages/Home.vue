@@ -1,11 +1,12 @@
 <template>
-  <main class="page">
+  <main v-if="!!user" class="page">
     <Resume :user="user" />
     <div class="section-divider" />
   </main>
 </template>
 
 <script>
+import githubApi from '@/services/github-api';
 import Resume from '../sections/Resume.vue';
 
 export default {
@@ -15,12 +16,11 @@ export default {
   },
   data() {
     return {
-      user: {
-        name: 'Fernando Moraes',
-        profession: 'Full-Stack Developer',
-        location: 'São Paulo',
-      },
+      user: undefined,
     };
+  },
+  async mounted() {
+    this.user = await githubApi.getUser();
   },
 };
 </script>
