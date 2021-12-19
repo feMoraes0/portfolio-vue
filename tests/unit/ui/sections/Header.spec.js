@@ -1,4 +1,4 @@
-import Header from '@/ui/components/Header.vue';
+import Header from '@/ui/sections/Header.vue';
 
 describe('Header', () => {
   it('Should component name be equal file name', () => {
