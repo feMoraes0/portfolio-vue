@@ -1,3 +1,10 @@
+# [2.7.0](https://github.com/feMoraes0/portfolio-vue/compare/v2.6.0...v2.7.0) (2022-01-09)
+
+
+### Features
+
+* **responsive:** adds header and resume components responsivity ([2470c46](https://github.com/feMoraes0/portfolio-vue/commit/2470c4665539d7672a04e97e37b7ed6478488e51))
+
 # [2.6.0](https://github.com/feMoraes0/portfolio-vue/compare/v2.5.3...v2.6.0) (2021-12-19)
 
 
