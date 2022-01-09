@@ -1,7 +1,12 @@
 <h1 align="center">Portfolio</h1>
 
 ## :rocket: Cool features
- - `nothing yet`
+ - `Unit Testing`
+ - `Responsive design`
+ - `Continuous Integration with GitHub`
+ - `API consumption with Axios`
+ - `Conventional Commits`
+ - `Pre-commit and Pre-push validations`
 
 ## :paperclip: Useful Links
  - [Free 3D cartoon hands](https://www.uistore.design/items/free-3d-cartoon-hands-for-figma/)
@@ -25,7 +30,7 @@ $ npm run serve
 ```
 
 ## :link: Inspiration
- - [Jeremy Sallée](https://dribbble.com/salleedesign)
+ - [Design](https://cdn.dribbble.com/users/746931/screenshots/16077352/media/a3ed8ae0670ec2b7163dbea7da6170ba.jpg)
 
 ## :mailbox: Contact
   - <a target="_blank" href="https://www.linkedin.com/in/fernando-moraes-48a26916a/">LinkedIn</a>
