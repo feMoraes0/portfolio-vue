@@ -201,4 +201,40 @@ export default {
     }
   }
 }
+
+@media (max-width: 768px) {
+  .resume {
+    .user-data-box {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .user-data-image {
+        display: none;
+      }
+
+      .user-data-info {
+        &.left {
+          padding-right: 0;
+        }
+
+        &.right {
+          width: 100%;
+          padding-left: 0;
+          text-align: initial;
+          margin-top: 9rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .resume {
+    .user-data-box {
+      .user-data-image {
+        display: none;
+      }
+    }
+  }
+}
 </style>

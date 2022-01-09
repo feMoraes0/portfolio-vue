@@ -96,4 +96,12 @@ export default {
     }
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    .social-box, .menu-box {
+      display: none;
+    }
+  }
+}
 </style>
