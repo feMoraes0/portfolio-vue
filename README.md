@@ -3,7 +3,7 @@
 ## :rocket: Cool features
  - `Unit Testing`
  - `Responsive design`
- - `Continuous Integration with GitHub`
+ - `CI/CD with GitHub and Netlify`
  - `API consumption with Axios`
  - `Conventional Commits`
  - `Pre-commit and Pre-push validations`
