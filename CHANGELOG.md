@@ -1,3 +1,10 @@
+# [2.8.0](https://github.com/feMoraes0/portfolio-vue/compare/v2.7.0...v2.8.0) (2022-01-16)
+
+
+### Features
+
+* **loading:** adds logic and component to show loading animation ([d04864a](https://github.com/feMoraes0/portfolio-vue/commit/d04864ab7c6b0c4c7866e8bdc39c6931558d00dc))
+
 # [2.7.0](https://github.com/feMoraes0/portfolio-vue/compare/v2.6.0...v2.7.0) (2022-01-09)
 
 
