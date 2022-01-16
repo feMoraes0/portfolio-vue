@@ -1,9 +1,7 @@
 <template>
   <header class="container">
     <ul class="menu-box">
-      <li>Projects</li>
-      <li>Experience</li>
-      <li>Contact</li>
+      <li>About</li>
     </ul>
     <div class="logo-box">
       <Logo class="logo" />
