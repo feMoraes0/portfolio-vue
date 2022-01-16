@@ -10,8 +10,8 @@
 
 <script>
 import githubApi from '@/services/github-api';
-import Resume from '../sections/Resume.vue';
-import Loading from '../components/Loading.vue';
+import Resume from '@/ui/sections/Resume.vue';
+import Loading from '@/ui/components/Loading.vue';
 
 export default {
   name: 'Home',
