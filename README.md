@@ -1,37 +1,29 @@
-<h1 align="center">Portfolio</h1>
+# portfolio-vue
 
-## :rocket: Cool features
- - `Unit Testing`
- - `Responsive design`
- - `CI/CD with GitHub and Netlify`
- - `API consumption with Axios`
- - `Conventional Commits`
- - `Pre-commit and Pre-push validations`
-
-## :paperclip: Useful Links
- - [Free 3D cartoon hands](https://www.uistore.design/items/free-3d-cartoon-hands-for-figma/)
-
-## :book: How to use
-
-To clone and run this application, you'll need [Git](https://git-scm.com/downloads) and [Vue.JS](https://vuejs.org/v2/guide/) installed on your computer. From your command line:
-
+## Project setup
 ```
-# Clone this repository
-$ git clone https://github.com/feMoraes0/portfolio-vue.git
-
-# Go into the repository
-$ cd portfolio-vue
-
-# Install dependencies
-$ npm install
-
-# Run the project
-$ npm run serve
+npm install
 ```
 
-## :link: Inspiration
- - [Design](https://cdn.dribbble.com/users/746931/screenshots/16077352/media/a3ed8ae0670ec2b7163dbea7da6170ba.jpg)
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-## :mailbox: Contact
-  - <a target="_blank" href="https://www.linkedin.com/in/fernando-moraes-48a26916a/">LinkedIn</a>
-  - <a target="_blank" href="mailto:fernandomoraes.lopes@gmail.com">E-mail</a>
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run your unit tests
+```
+npm run test:unit
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
