@@ -2,12 +2,12 @@
   <div class="home-view">
     <section class="home-view__introduction">
       <h3>
-        Hi! I am Fernando, a full-stack developer at Vivo (Telefônica Brasil) based
-        in São Paulo
+        Hi! I am {{ user.name }}, a {{ user.position }} at {{ user.company }} based
+        in {{ user.city }}.
       </h3>
     </section>
     <section class="home-view__projects">
-      <article v-for="project in projects" :key="project" class="home-view__projects__article">
+      <article v-for="project in projects" :key="project.id" class="home-view__projects__article">
         <img  class="home-view__projects__article__background" src="https://via.placeholder.com/200" alt="background">
       </article>
     </section>
@@ -20,8 +20,46 @@
 <script lang="ts">
 import { Vue } from 'vue-class-component';
 
+interface User {
+  name: string,
+  city: string,
+  position: string,
+  company: string,
+}
+
+interface Project {
+  id: number,
+  name: number,
+  language: string,
+  url: string,
+  description: string,
+}
+
 export default class HomeView extends Vue {
-  projects = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+  user: User = {
+    name: '',
+    city: '',
+    position: '',
+    company: '',
+  };
+
+  projects: Array<Project> = [];
+
+  async mounted() {
+    const userResponse = await fetch('https://api.github.com/users/femoraes0');
+    const jsonUserResponse = await userResponse.json();
+    this.user.name = jsonUserResponse.name;
+    this.user.city = jsonUserResponse.location;
+    this.user.company = jsonUserResponse.company;
+    this.user.position = jsonUserResponse.bio;
+
+    const projectsResponse = await fetch('https://api.github.com/users/feMoraes0/repos');
+    const jsonProjectsResponse = await projectsResponse.json();
+    jsonProjectsResponse.forEach((project: Project) => {
+      console.log(project);
+      this.projects.push(project);
+    });
+  }
 }
 </script>
 
