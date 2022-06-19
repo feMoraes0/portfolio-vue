@@ -8,7 +8,11 @@
     </section>
     <section class="home-view__projects">
       <article v-for="project in projects" :key="project.id" class="home-view__projects__article">
-        <img  class="home-view__projects__article__background" src="https://via.placeholder.com/200" alt="background">
+        <img
+          class="home-view__projects__article__background"
+          :src="require(`@/assets/images/${getImageByLanguage(project.language)}`)"
+          alt="background"
+        />
       </article>
     </section>
     <footer class="home-view__footer">
@@ -45,12 +49,28 @@ export default class HomeView extends Vue {
     const getUserGateway = new FetchGetUserGateway();
     const getUserUsecase = new GetUserUsecase(getUserGateway, 'feMoraes0');
     this.user = await getUserUsecase.execute();
-    const projectsResponse = await fetch('https://api.github.com/users/feMoraes0/repos');
+    const projectsResponse = await fetch('https://api.github.com/users/feMoraes0/repos?sort=updated');
     const jsonProjectsResponse = await projectsResponse.json();
     jsonProjectsResponse.forEach((project: Project) => {
-      console.log(project);
       this.projects.push(project);
     });
+  }
+
+  getImageByLanguage(language: string) {
+    const images = {
+      vue: 'vuejs-card.png',
+      javascript: 'javascript-card.png',
+      typescript: 'typescript-card.png',
+      dart: 'dart-card.png',
+      swift: 'swift-card.png',
+      css: 'css-card.png',
+      scss: 'scss-card.png',
+      html: 'html-card.png',
+    } as any;
+
+    const languageLowerCase = language?.toLowerCase();
+
+    return images[languageLowerCase] || 'github-card.png';
   }
 }
 </script>
@@ -68,6 +88,7 @@ export default class HomeView extends Vue {
 
   &__projects {
     display: grid;
+    grid-gap: 2px;
     grid-template-columns: repeat(4, 1fr);
     margin: 10rem 0;
 
