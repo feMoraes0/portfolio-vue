@@ -1,7 +1,7 @@
 <template>
   <div class="home-view">
     <section class="home-view__introduction">
-      <h3>
+      <h3 v-if="user">
         Hi! I am {{ user.name }}, a {{ user.position }} at {{ user.company }} based
         in {{ user.city }}.
       </h3>
@@ -12,12 +12,14 @@
       </article>
     </section>
     <footer class="home-view__footer">
-      <p>developed in 2022</p>
+      <p>Developed in 2022</p>
     </footer>
   </div>
 </template>
 
 <script lang="ts">
+import FetchGetUserGateway from '@/gateways/fetch/fetch-get-user-gateway';
+import GetUserUsecase from '@/usecases/get-user-usecase';
 import { Vue } from 'vue-class-component';
 
 interface User {
@@ -36,23 +38,13 @@ interface Project {
 }
 
 export default class HomeView extends Vue {
-  user: User = {
-    name: '',
-    city: '',
-    position: '',
-    company: '',
-  };
-
+  user?: User;
   projects: Array<Project> = [];
 
   async mounted() {
-    const userResponse = await fetch('https://api.github.com/users/femoraes0');
-    const jsonUserResponse = await userResponse.json();
-    this.user.name = jsonUserResponse.name;
-    this.user.city = jsonUserResponse.location;
-    this.user.company = jsonUserResponse.company;
-    this.user.position = jsonUserResponse.bio;
-
+    const getUserGateway = new FetchGetUserGateway();
+    const getUserUsecase = new GetUserUsecase(getUserGateway, 'feMoraes0');
+    this.user = await getUserUsecase.execute();
     const projectsResponse = await fetch('https://api.github.com/users/feMoraes0/repos');
     const jsonProjectsResponse = await projectsResponse.json();
     jsonProjectsResponse.forEach((project: Project) => {
