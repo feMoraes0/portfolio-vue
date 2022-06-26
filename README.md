@@ -1,29 +1,12 @@
-# portfolio-vue
+# Portfolio Vue 3 + TS
 
-## Project setup
-```
-npm install
-```
+## To Do
+[ ] Define the object-data that will be used to define the languages and colours.
+[ ] Code mobile version.
+[ ] Code section that will show language name and description.
+[ ] Code modal with github projects filtered.
+[ ] Code 404 page.
+[ ] Release the project.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Important Links
+[Font Awesome](https://fontawesome.com/icons)
