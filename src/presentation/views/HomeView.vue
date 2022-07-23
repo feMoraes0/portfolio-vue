@@ -1,106 +1,79 @@
 <template>
-  <div class="home-view">
-    <section class="home-view__introduction">
-      <h3 v-if="user">
-        Hi! I am {{ user.name }}, a {{ user.position }} at {{ user.company }} based
-        in {{ user.city }}.
-      </h3>
+  <main class="home-page">
+    <section class="card">
+      <span class="card__label">
+        2022
+      </span>
+      <h1>Fernando</h1>
+      <div class="card__about">
+        <h3>About</h3>
+        <h4>
+          Full Stack Developer with more than two years of professional
+          experience working with JavaScript and TypeScript in Frontend
+          and Backend projects. Involved in techinical validation, implementation
+          and testing of application demands that are delivered daily for over 10.000 people.
+        </h4>
+      </div>
     </section>
-    <section class="home-view__projects">
-      <article v-for="project in projects" :key="project.id" class="home-view__projects__article">
-        <img
-          class="home-view__projects__article__background"
-          :src="require(`@/assets/images/${getImageByLanguage(project.language)}`)"
-          alt="background"
-        />
-      </article>
-    </section>
-    <footer class="home-view__footer">
-      <p>Developed in 2022</p>
-    </footer>
-  </div>
+  </main>
 </template>
 
 <script lang="ts">
-import FetchGetUserGateway from '@/gateways/fetch/fetch-get-user-gateway';
-import GetUserUsecase from '@/usecases/get-user-usecase';
-import { Vue } from 'vue-class-component';
+import { defineComponent } from 'vue';
 
-interface User {
-  name: string,
-  city: string,
-  position: string,
-  company: string,
-}
-
-interface Project {
-  id: number,
-  name: number,
-  language: string,
-  url: string,
-  description: string,
-}
-
-export default class HomeView extends Vue {
-  user?: User;
-  projects: Array<Project> = [];
-
-  async mounted() {
-    const getUserGateway = new FetchGetUserGateway();
-    const getUserUsecase = new GetUserUsecase(getUserGateway, 'feMoraes0');
-    this.user = await getUserUsecase.execute();
-    const projectsResponse = await fetch('https://api.github.com/users/feMoraes0/repos?sort=updated');
-    const jsonProjectsResponse = await projectsResponse.json();
-    jsonProjectsResponse.forEach((project: Project) => {
-      this.projects.push(project);
-    });
-  }
-
-  getImageByLanguage(language: string) {
-    const images = {
-      vue: 'vuejs-card.png',
-      javascript: 'javascript-card.png',
-      typescript: 'typescript-card.png',
-      dart: 'dart-card.png',
-      swift: 'swift-card.png',
-      css: 'css-card.png',
-      scss: 'scss-card.png',
-      html: 'html-card.png',
-    } as any;
-
-    const languageLowerCase = language?.toLowerCase();
-
-    return images[languageLowerCase] || 'github-card.png';
-  }
-}
+export default defineComponent({
+  name: 'HomePage',
+});
 </script>
 
 <style lang="scss" scoped>
-.home-view {
-  margin-top: 10rem;
+.home-page {
+  padding: 5vh 5vw;
+}
+.card {
+  width: 90vw;
+  height: 90vh;
+  background-color: #DCD7C9;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #222831;
 
-  &__introduction {
-    color: #222;
-    font-size: 2.9rem;
-    text-align: left;
-    width: 80%;
+  &__label {
+    font-size: 1.6rem;
+    background-color: #F05454;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
   }
 
-  &__projects {
-    display: grid;
-    grid-gap: 2px;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 10rem 0;
+  h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 18rem;
+    line-height: 20rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 7rem auto;
+  }
 
-    &__article {
-      height: 15vw;
-      width: 15vw;
+  &__about {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
 
-      &__background {
-        height: 100%;
-        object-fit: cover;
-        width: 100%;
-      }
+    h3 {
+      flex: 1;
+      font-size: 2.2rem;
+      font-weight: 400;
+      font-family: 'Roboto Slab', serif;
+    }
+
+    h4 {
+      flex: 3;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2rem;
     }
   }
 }

@@ -3,10 +3,11 @@
 </template>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@400;600&display=swap');
 
 * {
   box-sizing: inherit;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -16,10 +17,9 @@ html {
 }
 
 body {
-  background-color: #F0F0E8;
+  background-color: #232931;
   box-sizing: border-box;
   height: 100vh;
-  padding: 0 20vw;
   width: 100vw;
 }
 </style>
